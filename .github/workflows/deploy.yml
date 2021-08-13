@@ -1,8 +1,8 @@
-name: Publish docs via GitHub Pages
+name: Veröffentliche neue Version vom Kochbuch
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -18,6 +18,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CUSTOM_DOMAIN: kochen.haumdaucher.de
-          CONFIG_FILE: mkdocs.yml
           EXTRA_PACKAGES: build-base
           # GITHUB_DOMAIN: github.myenterprise.com
