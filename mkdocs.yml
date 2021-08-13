@@ -1,0 +1,18 @@
+site_name: Das Haumdaucher Kochbuch
+dev_addr: 127.0.0.1:8080
+strict: true
+theme:
+  name: "material"
+  features:
+    - navigation.instant
+repo_name: "Das Haumdaucher Kochbuch"
+repo_url: "https://github.com/haumdaucher-datalab/kochbuch"
+nav:
+  - Einleitung:
+    - Worum gehts: einleitung/worum_gehts.md
+  - Pizza:
+    - KBugs Vorteigpizza: pizza/kbug_vorteigpizza.md
+  - Burger:
+    - Patty: burger/patty.md
+    - Chaz Buns: burger/chaz_buns.md
+    - Kombinationen: burger/kombinationen.md
