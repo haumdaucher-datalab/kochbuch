@@ -3,16 +3,34 @@ dev_addr: 127.0.0.1:8080
 strict: true
 theme:
   name: "material"
+  language: de
   features:
     - navigation.instant
+    - navigation.tabs
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: brown
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: brown
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 repo_name: "Das Haumdaucher Kochbuch"
 repo_url: "https://github.com/haumdaucher-datalab/kochbuch"
 nav:
-  - Einleitung:
-    - Worum gehts: einleitung/worum_gehts.md
   - Pizza:
+    - Pizza Basics: pizza/pizza_basics.md
     - KBugs Vorteigpizza: pizza/kbug_vorteigpizza.md
   - Burger:
-    - Patty: burger/patty.md
-    - Chaz Buns: burger/chaz_buns.md
+    - Burger Basics: burger/burger_basics.md
     - Kombinationen: burger/kombinationen.md
+    - Chaz Buns: burger/chaz_buns.md
+  - Fleisch:
+    - Chaz Gullasch: fleisch/chaz_gullasch.md
+  - Backen: 
+    - Brot Basics: backen/brot_basics.md 
