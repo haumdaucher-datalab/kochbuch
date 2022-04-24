@@ -1,12 +1,18 @@
 site_name: Das Haumdaucher Kochbuch
 dev_addr: 127.0.0.1:8080
 strict: true
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+
 theme:
   name: "material"
   language: de
   features:
     - navigation.instant
     - navigation.tabs
+    - content.tabs.link
   palette:
     - scheme: default
       media: "(prefers-color-scheme: light)"
@@ -23,14 +29,9 @@ theme:
 repo_name: "Das Haumdaucher Kochbuch"
 repo_url: "https://github.com/haumdaucher-datalab/kochbuch"
 nav:
-  - Pizza:
-    - Pizza Basics: pizza/pizza_basics.md
-    - KBugs Vorteigpizza: pizza/kbug_vorteigpizza.md
-  - Burger:
-    - Burger Basics: burger/burger_basics.md
-    - Kombinationen: burger/kombinationen.md
-    - Chaz Buns: burger/chaz_buns.md
-  - Fleisch:
-    - Chaz Gullasch: fleisch/chaz_gullasch.md
-  - Backen: 
-    - Brot Basics: backen/brot_basics.md 
+  - Pizza: pizza/pizza.md
+  - Burger: burger/burger.md
+  # - Fleisch:
+  #   - Chaz Gullasch: fleisch/chaz_gullasch.md
+  # - Backen: 
+  #   - Brot Basics: backen/brot_basics.md 
